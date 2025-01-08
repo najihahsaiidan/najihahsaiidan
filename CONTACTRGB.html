@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple-Blue-Pink Motion FOR CONTACT</title>
+    <style>
+         /* Header Styling */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            color: #ffffff;
+            background-color: #7a4c9c; /* Purple */
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6a358c; /* Darker purple */
+            padding: 10px 0;
+        }
+        nav a {
+            color: #f3e6f7; /* Light lavender */
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #9c6fb2; /* Soft purple hover */
+            color: #ffffff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgba(122, 76, 156, 0.8); /* Transparent purple overlay */
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border: 9px solid #f3e6f7; /* Light lavender border */
+            border-radius: 50px;
+        }
+        .hero p {
+            margin: 10px 0;
+            font-size: 18px;
+            color: #f3e6f7; /* Light lavender text */
+        }
+        .hero a {
+            color: #d1a3e5; /* Soft purple */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero a:hover {
+            color: #f3e6f7; /* Light lavender on hover */
+        }
+        .hero button {
+            background-color: #5c2f77; /* Deep purple */
+            color: #f3e6f7; /* Light lavender */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .hero button:hover {
+            background-color: #6a358c; /* Slightly lighter purple */
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            color: #f3e6f7; /* Light lavender */
+            background-color: #6a358c; /* Dark purple */
+        }
+        /* Set body and text styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(90deg, purple, blue, pink);
+            background-size: 300% 300%; /* Makes the gradient larger for smoother motion */
+            animation: colorMotion 5s infinite; /* Apply animation */
+            color: white;
+            text-align: center;
+        }
+
+        /* Animation keyframes for Purple-Blue-Pink motion */
+        @keyframes colorMotion {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Add some styling to text */
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Home Button Styling (Black Color) */
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: black; /* Set black background */
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: gray; /* Darker gray on hover */
+            transform: scale(1.1); /* Slight zoom */
+        }
+
+        /* Container for the contacts */
+        .contact-container {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Slight background for the container */
+            width: 300px;
+            text-align: left;
+        }
+
+        /* Contact list container styling */
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            background: linear-gradient(90deg, purple, blue, pink);
+            background-size: 300% 300%;
+            animation: colorMotion 5s infinite;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+
+        .contact-item img {
+            width: 24px;
+            height: 24px;
+        }
+
+         /* Italic style for phone number */
+         .italic {
+            font-style: italic;
+         }
+    </style>
+</head>
+<script>
+    let isPhoneVisible = false; // Track whether the phone number is shown or hidden
+
+    function togglePhone() {
+        const phoneNumber = document.getElementById('phone-number');
+        const toggleButton = document.getElementById('toggle-button');
+
+        if (isPhoneVisible) {
+            phoneNumber.textContent = 'Private'; // Hide the phone number
+            toggleButton.textContent = 'Show';  // Change button text to "Show"
+        } else {
+            phoneNumber.textContent = '+601159501102'; // Show the phone number
+            toggleButton.textContent = 'Hide';  // Change button text to "Hide"
+        }
+
+        isPhoneVisible = !isPhoneVisible; // Toggle the state
+    }
+</script>
+<body>
+    <center>
+        <p><button onclick="document.location='HOMEPAGE.html'">Home</button></p>
+    </center>
+    <div class="contact-container">
+        <!-- Contact List -->
+        <div class="contact-list">
+            <a href="https://www.instagram.com/najihahsaiidan" class="contact-item" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+                Instagram
+            </a>
+            <a href="mailto:najihahsaiidan09@gmail.com" class="contact-item">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email">
+                Email
+            </a>
+            <p>📞 Phone: <span id="phone-number" class="italic">Private</span> <button id="toggle-button" onclick="togglePhone()">Show</button></p>
+        </div>
+    </div>
+</body>
+</html>
+

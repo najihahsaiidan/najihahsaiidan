@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        /* Body Styling */
+        body {
+            font-family: 'Arial Black', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e6f7; /* Light lavender */
+            background-image: url('W1.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: #4b306e; /* Deep purple for text */
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 20px 0;
+            color: #ffffff;
+            background-color: #7a4c9c; /* Purple */
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6a358c; /* Darker purple */
+            padding: 10px 0;
+        }
+        nav a {
+            color: #f3e6f7; /* Light lavender */
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #9c6fb2; /* Soft purple hover */
+            color: #ffffff;
+        }
+
+        /* Bouncy Text Container */
+        .bouncy-container {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'cooper black', sans-serif;
+        }
+        .bouncy-text {
+            font-size: 2.5rem;
+            color: #0e1b55; /* Purple */
+            display: inline-block;
+            animation: bounce 1s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px); /* Move up */
+            }
+        }
+
+        /* Image Gallery Styling */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px auto;
+            padding: 10px;
+            max-width: 1200px;
+        }
+        .image-container {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            border: 2px solid #f3e6f7; /* Light lavender border */
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .circular-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .image-container:hover .overlay {
+            opacity: 1;
+        }
+        div.scroll-container {
+            background-color: #913d75;
+            overflow: auto;
+            white-space: nowrap;
+            padding: 10px;
+        }
+
+        div.scroll-container img {
+            padding: 10px;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            color: #f3e6f7; /* Light lavender */
+            background-color: #6a358c; /* Dark purple */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <br> ‧ ︵‿₊୨୧₊‿︵ ˚ ₊ ︵‿₊୨୧₊‿︵ ‧ ˚ ₊
+        <h1>Welcome to My Website !</h1>
+        <p> ︶⊹︶︶୨୧︶︶⊹︶  ︶⊹︶︶୨୧︶︶⊹︶ </p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="HOMEPAGE.html">Home</a>
+        <a href="ABOUT ME.html">About Me</a>
+        <a href="EDUCATION.html">Education</a>
+        <a href="RESUME.html">Resume</a>
+        <a href="MYGALLERY.html">Gallery</a>
+        <a href="CONTACTRGB.html">Contact</a>
+    </nav>
+    
+    <!-- Family Section -->
+    <div class="bouncy-container">
+        <span class="bouncy-text">My Family</span>
+    </div>
+
+    <div class="gallery">
+        <div class="image-container">
+            <img src="F1.jpg" alt="f1" class="circular-image">
+            <div class="overlay">Umi Abah</div>
+        </div>
+        <div class="image-container">
+            <img src="F2.jpg" alt="f2" class="circular-image">
+            <div class="overlay">Umi Abah Now</div>
+        </div>
+        <div class="image-container">
+            <img src="F3.jpg" alt="f3" class="circular-image">
+            <div class="overlay">At Funfair</div>
+        </div>
+        <div class="image-container">
+            <img src="F4.jpg" alt="f4" class="circular-image">
+            <div class="overlay">At McDonalds</div>
+        </div>
+        <div class="image-container">
+            <img src="F5.jpg" alt="f5" class="circular-image">
+            <div class="overlay">At Hutan Bandar</div>
+        </div>
+        <div class="image-container">
+            <img src="F6.jpg" alt="f6" class="circular-image">
+            <div class="overlay">At Aeon Tebrau</div>
+        </div>
+        <div class="image-container">
+            <img src="F8.jpg" alt="f8" class="circular-image">
+            <div class="overlay">Raya 2024</div>
+        </div>
+        <div class="image-container">
+            <img src="F9.jpg" alt="f9" class="circular-image">
+            <div class="overlay">My Brother</div>
+        </div>
+        <div class="image-container">
+            <img src="F10.jpg" alt="f10" class="circular-image">
+            <div class="overlay">With My Sister</div>
+        </div>
+        <div class="image-container">
+            <img src="F11.jpg" alt="f11" class="circular-image">
+            <div class="overlay">On My Way Back Home !</div>
+        </div>
+    </div>
+
+    <!-- Highschool Section -->
+    <div class="bouncy-container">
+        <span class="bouncy-text">Highschool</span>
+    </div>
+    <div class="gallery">
+    <div class="image-container">
+        <img src="H1.jpg" alt="H1" class="circular-image">
+        <div class="overlay">With Bahasa Melayu's teacher</div>
+    </div>
+    <div class="image-container">
+        <img src="H2.jpg" alt="H2" class="circular-image">
+        <div class="overlay">My our class teacher</div>
+    </div>
+    <div class="image-container">
+        <img src="H3.jpg" alt="H3" class="circular-image">
+        <div class="overlay">Again with teacher</div>
+    </div>
+    <div class="image-container">
+        <img src="H4.jpg" alt="H4" class="circular-image">
+        <div class="overlay">Syasya and Qaisara</div>
+    </div>
+    <div class="image-container">
+        <img src="H5.jpg" alt="H5" class="circular-image">
+        <div class="overlay">Just four of us -.- </div>
+    </div>
+    <div class="image-container">
+        <img src="H6.jpg" alt="H6" class="circular-image">
+        <div class="overlay">Form 3's classmates</div>
+    </div>
+    <div class="image-container">
+        <img src="H7.jpg" alt="H7" class="circular-image">
+        <div class="overlay">Science Experiment</div>
+    </div>
+    <div class="image-container">
+        <img src="H8.jpg" alt="H8" class="circular-image">
+        <div class="overlay">Last Day of SPM</div>
+    </div>
+    <div class="image-container">
+        <img src="H9.jpg" alt="H9" class="circular-image">
+        <div class="overlay">Form 5's classmates</div>
+    </div>
+    <div class="image-container">
+        <img src="H10.jpg" alt="H10" class="circular-image">
+        <div class="overlay">Form 5's graduation day!</div>
+    </div>
+    </div>
+
+    <!-- Diploma Life -->
+    <div class="bouncy-container">
+        <span class="bouncy-text">Diploma Life</span>
+    </div>
+    <div class="gallery">
+    <div class="image-container">
+        <img src="D1.jpg" alt="D1" class="circular-image">
+        <div class="overlay">Orientation Day</div>
+    </div>
+    <div class="image-container">
+        <img src="D2.jpg" alt="D2" class="circular-image">
+        <div class="overlay">With my first friend at UiTM</div>
+    </div>
+    <div class="image-container">
+        <img src="D3.jpg" alt="D3" class="circular-image">
+        <div class="overlay">Cheer Practice</div>
+    </div>
+    <div class="image-container">
+        <img src="D4.jpg" alt="D4" class="circular-image">
+        <div class="overlay">Echoooo</div>
+    </div>
+    <div class="image-container">
+        <img src="D5.jpg" alt="D5" class="circular-image">
+        <div class="overlay">Recreation</div>
+    </div>
+    <div class="image-container">
+        <img src="D6.jpg" alt="D6" class="circular-image">
+        <div class="overlay">Me, Safi and Maira!</div>
+    </div>
+    <div class="image-container">
+        <img src="D7.jpg" alt="D7" class="circular-image">
+        <div class="overlay">One with Ena</div>
+    </div>
+    <div class="image-container">
+        <img src="D8.jpg" alt="D8" class="circular-image">
+        <div class="overlay">Nasi Godeng Gading group</div>
+    </div>
+    <div class="image-container">
+        <img src="D9.jpg" alt="D9" class="circular-image">
+        <div class="overlay">My Roommates</div>
+    </div>
+    <div class="image-container">
+        <img src="D10.jpg" alt="D10" class="circular-image">
+        <div class="overlay">Maira again hehe..</div>
+    </div>
+    <div class="image-container">
+        <img src="D11.jpg" alt="D11" class="circular-image">
+        <div class="overlay">Class C</div>
+    </div>
+    <div class="image-container">
+        <img src="D12.jpg" alt="D12" class="circular-image">
+        <div class="overlay">Just us with tyre, captured by enaa</div>
+    </div>
+    <br>
+    <video width="200" height="300" rotate="left" controls>
+        <source src="v2.mp4" type="video/mp4">
+        <source src="v2.mp4" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>
+      </div>
+    </div>
+
+    <!-- My Cat -->
+    <div class="bouncy-container">
+        <span class="bouncy-text">My Cat</span>
+    </div>
+    <div class="scroll-container">
+        <img src="C5.jpg" alt="C5" width="200" height="250">
+        <img src="C1.jpg" alt="C1" width="200" height="250">
+        <img src="C2.jpg" alt="C2" width="200" height="250">
+        <img src="C3.jpg" alt="C3" width="200" height="250">
+        <img src="C4.jpg" alt="C4" width="200" height="250">
+        <img src="C6.jpg" alt="C6" width="200" height="250">
+        <img src="C7.jpg" alt="C7" width="200" height="250">
+        <img src="C8.jpg" alt="C8" width="200" height="250">
+        <img src="C9.jpg" alt="C9" width="200" height="250">
+      </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 NajihahSaiidan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
